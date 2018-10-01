@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>location voitures</title>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- bootstrap-->
+</head>
+
+<body>
+
+
+<main>
+
+<!--navbar--  > 
+<header>
+  <div class="row" id="navigation">
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <nav class="navbar navbar-dark float-right"></nav>
+        <div class="bg-light p-4">
+          <h5 class="text-white h4"></h5>
+          <span class="text-muted">Louer une voiture</span>
+          <span class="text-muted">Louer un utilitaire</span>
+          <span class="text-muted">Réserver un chauffeur</span>
+          <span class="text-muted">Découvrez nos agences</span>
+          <span class="text-muted">Mon compte</span>
+          <span class="text-muted">Contact</span>
+        </div>
+        </nav>
+      </div>
+  </div>
+
+
+
+
+
+
+  <div class="row" id="voiture_header"><!-- image plein ecran  1 ligne 12 colonnes-->
+    <div class="thumbnail text-center">
+        <img src="images/background.jpg" alt="" class="img-responsive">
+        <div class="caption">
+                  <h1 class="bienvenue">Bienvenue à bord</h1>
+                  <h2 class="location">location de voitures 24h/24 et 7j/7</h2>
+                  <div class="line_header"></div>
+                <form id="formulaire_vehicules">
+                    <div class="form-row">
+                      <div class="col-sm-4 col-md-3">
+                          <select class="form-control" id="adresses">
+                                <option>adresse de départ</option>
+                                <option>Ville 1</option>
+                                <option>Ville 2</option>
+                                <option>Ville 3</option>
+                                <option>Ville 4</option>
+                          </select>
+                      </div>
+                      <div class="col-sm-4 col-md-3">
+                        <input type="date" class="form-control" placeholder="Début de location">
+                      </div>
+                      <div class="col-sm-4 col-md-3">
+                        <input type="date" class="form-control" placeholder="Fin de location">
+                      </div>
+                          <div class="col-sm-12 col-md-3 " >
+                         <button type="submit" class="btn btn-success mb-2">Valider ma recherche</button>
+                      </div>
+                    </div>
+                  </form>
+        </div>
+    </div>
+</div>
+</header>  
+
+
+  <div class="container"> <!--partie liste des vehicules -->
+ 
+<!-- ligne qui contient les formulaires de resulats -->
+ <section class="d-flex justify-content-between" id="nbResultats"> <!--  tri des réultats : space between-->
+        <h4 id="nombreResultats">7 resultats</h4>
+        
+        <div> <!-- "trier par prix decroissant..."-->
+              <label for=" "></label>
+              <select class="form-control" id="tri">
+                      <option>Prix décroissant</option>
+                      <option>Pertinence</option>
+                      <option>véhicules</option>
+                      <option>Dates</option>
+                      <option>5</option>
+              </select>
+        </div> <!-- fermeture du menu deroulant "tri resultats" -->
+    </div>  <!-- fermeture de la div du tri des resultats -->
+</div> <!-- fermeture de la ligne des resultats -->
+</section>
+
+
+
+
+<!-- liste des voitures -->
+
+          <div class="container"> 
+          <div class="d-flex justify-content-center"> 
+              <div class ="row"><!-- row qui contient la liste des vehicules -->
+                 <div class="col-2"> </div>
+                  <ul class="col-8" id="listeVehicules">
+                    <li class ="presentation_voiture" id="vehicule1">   
+                       <img src="images/vehicule1.png" class="photo_voiture"> <!-- descriptif des vehicules -->
+                        <article class="descriptif_voiture"></article>
+                         <h3>Peugeot 208</h3>
+                          <p> Diesel, 5 portes, Autoradio<br>
+                            Forfait 1000km (0.5€/km supplémentaire)<br>
+                            999€. Agence de Paris
+                        </p>
+                        <button type="button" class="btn btn-success">Réserver et Payer</button></li>
+                    
+                    <hr>
+
+              <li class ="presentation_voiture" id="vehicule2">
+                <img src="images/vehicule2.png" class="photo_voiture">
+                  <article class="descriptif_voiture"></article>
+                    <h3>Ford Focus</h3>
+                      <p> Diesel, 5 portes, Autoradio<br>
+                          Forfait 1000km (0.5€/km supplémentaire)<br>
+                          999€. Agence de Paris
+                      </p>
+                    <button type="button" class="btn btn-success">Réserver et Payer</button></li>
+             
+              <hr>
+
+              <li class ="presentation_voiture" id="vehicule3">
+                <img src="images/vehicule3.png" class="photo_voiture">
+                   <article class="descriptif_voiture"></article>
+                      <h3>Audi A1</h3>
+                        <p> Diesel, 5 portes, Autoradio<br>
+                            Forfait 1000km (0.55€/km supplémentaire)<br>
+                            1100€. Agence de Paris
+                      </p>
+                      <button type="button" class="btn btn-success">Réserver et Payer</button></li>
+                      <hr>
+             
+              <li class ="presentation_voiture" id="vehicule4">
+                <img src="images/vehicule4.png" class="photo_voiture">
+                  <h3>Opel Mokka</h3>
+                      <p> Diesel, 5 portes, Autoradio<br>
+                          Forfait 1000km (0.4€/km supplémentaire)<br>
+                          1150€. Agence de Paris
+                      </p>
+                    <button type="button" class="btn btn-success">Réserver et Payer</button></li>
+              </ul>
+
+              <hr>
+            <div class="col-2"></div>
+            </div>
+          </div>
+
+      </container>
+    <hr>
+
+  </main>
+
+
+
+
+  <footer>
+    <img src="images/agence.jpg" class="image_footer" >
+    Notre agence de Paris<br>
+    300 boulevard de Vaugirard<br>
+    75015 PARIS<br>
+    01 49 78 21 33<br>
+    contact@vtc.com<br>
+ 
+  </footer>
+
+
+
+
+
+
+</body>
+
+
+
+<!-- scripts de Bootstraps -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/ X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</html>
